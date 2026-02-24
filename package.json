@@ -1,48 +1,24 @@
 {
-  "name": "playground.chatapp",
-  "version": "0.1.0",
+  "name": "chatapp",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@emotion/react": "^11.11.4",
-    "@emotion/styled": "^11.11.5",
-    "@fortawesome/fontawesome-svg-core": "^6.5.2",
-    "@fortawesome/free-brands-svg-icons": "^6.5.2",
-    "@fortawesome/free-regular-svg-icons": "^6.5.2",
-    "@fortawesome/free-solid-svg-icons": "^6.5.2",
-    "@fortawesome/react-fontawesome": "^0.2.2",
     "@microsoft/signalr": "^8.0.7",
-    "@mui/icons-material": "^5.15.18",
-    "@mui/material": "^5.15.18",
-    "@react-oauth/google": "^0.12.1",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.96",
-    "@types/react": "^18.2.75",
-    "@types/react-dom": "^18.2.24",
-    "buffer": "^6.0.3",
-    "crypto": "npm:crypto-browserify",
-    "crypto-browserify": "^3.12.0",
-    "date-fns": "^3.6.0",
+    "@reduxjs/toolkit": "^2.3.0",
     "js-cookie": "^3.0.5",
-    "jsonwebtoken": "^9.0.2",
     "jwt-decode": "^4.0.0",
-    "node-sass": "^9.0.0",
-    "react": "^17.0.0 || ^18.0.0",
-    "react-dom": "^17.0.0 || ^18.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-redux": "^9.1.2",
-    "react-router-dom": "^6.23.1",
+    "react-router-dom": "^6.28.0",
     "react-scripts": "5.0.1",
-    "react-signalr": "^0.2.19",
-    "redux": "^5.0.1",
-    "redux-logger": "^3.0.6",
-    "redux-thunk": "^3.1.0",
-    "sass": "^1.77.6",
-    "stream": "npm:stream-browserify",
-    "typescript": "^4.9.5",
-    "util": "^0.12.5",
-    "web-vitals": "^2.1.4"
+    "typescript": "^4.9.5"
+  },
+  "devDependencies": {
+    "@types/js-cookie": "^3.0.6",
+    "@types/node": "^16.18.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -50,34 +26,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "peerDependencies": {
-    "react": "^17.0.0 || ^18.0.0",
-    "react-dom": "^17.0.0 || ^18.0.0"
-  },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "@types/js-cookie": "^3.0.6",
-    "@types/jsonwebtoken": "^9.0.6",
-    "@types/redux-logger": "^3.0.13"
-  },
-  "browser": {
-    "crypto": false
+    "production": [">0.2%", "not dead", "not op_mini all"],
+    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
   }
 }

@@ -1,22 +1,18 @@
-import { Route, Routes } from "react-router-dom";
-import Home from "./components/Home/Home";
-import Login from "./containers/Login";
-import { AuthProvider } from "./useContext/authProvider";
-import "./App.scss";
+import React from 'react';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import { useAppSelector } from './hooks/useAppSelector';
+import LoginPage from './pages/Login/LoginPage';
+import HomePage from './pages/Home/HomePage';
 
-function App() {
+const App: React.FC = () => {
+  const isAuthenticated = useAppSelector(s => s.auth.isAuthenticated);
+
   return (
-    <AuthProvider>
-      <div className="App">
-        <main role="main" className="container">
-          <Routes>
-            <Route index path="/" Component={Home} />
-            <Route path="/login" Component={Login} />
-          </Routes>
-        </main>
-      </div>
-    </AuthProvider>
+    <Routes>
+      <Route path="/login" element={isAuthenticated ? <Navigate to="/" replace /> : <LoginPage />} />
+      <Route path="/*" element={isAuthenticated ? <HomePage /> : <Navigate to="/login" replace />} />
+    </Routes>
   );
-}
+};
 
 export default App;
