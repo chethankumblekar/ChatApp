@@ -25,7 +25,7 @@
 
 ## 📐 Architecture
 
-> See [`chatapp-architecture.html`](chatapp-architecture.html) for the full interactive diagram.
+> See [architecture](https://github.com/chethankumblekar/ChatService/blob/master/chatservice-architecture.svg) for the full interactive diagram.
 
 ```
 App (Route Guard)
